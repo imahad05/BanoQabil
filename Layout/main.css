@@ -81,11 +81,11 @@ article {
   justify-content: center;
 }
 
-.heading{
-    position: absolute;
-    font-size: 14px;
-    font-weight: 600;
-    color: black;
-    bottom: 0;
-    right: 1%;
+.heading {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  bottom: 0;
+  right: 1%;
 }
