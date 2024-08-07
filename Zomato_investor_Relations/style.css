@@ -71,6 +71,7 @@ nav {
   left: 0;
   right: 0;
   z-index: 11;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-container {
@@ -106,7 +107,7 @@ nav {
 }
 
 .nav-menu li a {
-  font-size: 18px;
+  font-size: 16px;
   color: var(--white);
   padding: 10px 5px;
   cursor: pointer;
@@ -161,6 +162,36 @@ nav {
 .menu-bar-btn,
 .close-menu-btn {
   display: none;
+}
+
+nav.scrolled {
+  background: var(--white);
+  box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.5);
+}
+
+nav.scrolled #Logo-white {
+  display: none;
+}
+
+nav.scrolled #Logo-black {
+  display: block;
+}
+
+nav.scrolled .nav-logo span {
+  color: var(--black);
+  border-color: var(--black);
+}
+
+nav.scrolled .nav-menu li a {
+  color: var(--black);
+}
+
+nav.scrolled .drop-down span {
+  color: var(--black);
+}
+
+nav.scrolled .nav-menu li .active{
+  color: var(--red);
 }
 
 /* ======================================================================== */
@@ -805,7 +836,7 @@ header {
     gap: 30px;
   }
 
-  .subscribe-left input{
+  .subscribe-left input {
     width: 80%;
     font-size: 14px;
   }
