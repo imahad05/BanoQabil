@@ -566,6 +566,39 @@ header {
   cursor: pointer;
   border-radius: var(--btn-radius);
 }
+
+.zomato-footer{
+  background: var(--bg-1);
+  height: 50vh;
+  padding: 50px 0;
+}
+
+.footer-head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lang-region{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.lang-region select{
+  width: fit-content;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: 1px solid var(--black);
+
+}
+.footer-head img{
+  width: 150px;
+}
+
+
 @media (max-width: 600px) {
   h1 {
     font-size: 30px;
